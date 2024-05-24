@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дикие ягоды</title>
+</head>
+<body>
+<center>
+    {% for product in products %}
+        <h2><a href="{% url 'detail' product.id %}">{{ product.title }}</a></h2>
+        <img src="{{ product.image.url }}" width="200">
+    {% endfor %}
+</center>
+</body>
+</html>

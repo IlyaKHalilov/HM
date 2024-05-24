@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.title }}</title>
+</head>
+<body>
+<h3><a href="{% url 'main' %}">Домой</a></h3>
+<center>
+  <img src="{{ product.image.url }}">
+  <h2>Название: {{ product.title }}</h2>
+  <p>Цена: {{ product.price }}</p>
+  <p>Описание: {{ product.description }}</p>
+</center>
+</body>
+</html>
